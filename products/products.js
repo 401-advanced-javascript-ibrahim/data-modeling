@@ -1,17 +1,20 @@
+/* eslint-disable no-undef */
+/* eslint-disable camelcase */
+
 'use strict';
 
 const DataModel = require('../memory-data-model.js');
 
 class Products extends DataModel {
-    constructor() {
-        super();
-        this.schema = {
-            id: { type: 'string', required: true },
-            price: { type: 'number', required: true },
-            weight: { type: 'number' },
-            quantity_in_stock: { type: 'number', required: true }
-        }
-    }
+  constructor() {
+    super();
+    this.schema = {
+      id: { type: 'string', required: true, },
+      price: { type: 'number', required: true, },
+      weight: { type: 'number', },
+      quantity_in_stock: { type: 'number', required: true, },
+    };
+  }
 
 }
 
